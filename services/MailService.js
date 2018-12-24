@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 const ErrorMessage=require('../error/ErrorMessage');
 const MailService = {};
 
-MailService.getMail = (userInstance) => {
+MailService.sendMail = (userInstance) => {
   return new Promise((resolve, reject) => {
     let user = 'qheredeneme@gmail.com';
     let pass = 'MetYi2018';

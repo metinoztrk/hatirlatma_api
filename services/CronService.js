@@ -16,7 +16,7 @@ module.exports = ()=>{
             })
             date.map(instance=>
                 {
-                    MailService.getMail(instance);
+                    MailService.sendMail(instance);
                     Message.findOneAndRemove({'_id':instance._id}).then((result)=>{
                         console.log(result);
                     })
